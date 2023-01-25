@@ -1,3 +1,4 @@
+
 #include<iostream>;
 #include<vector>;
 #include<string>;
@@ -60,11 +61,6 @@ class vector<class vector<char>> Permutations(class vector<char> symbols); //thi
 int main(){
 class vector<class Log> Record;
 Record = ExtractInfo();
-
-for(int i = 0; i<Record.size();++i){
-	Record[i].show();
-	cout << endl;
-}
 class vector<char> candidate;
 //LEAST CASE : LENGTH OF 8 AND ONLY CHARACTERS ARE 0,1,2,3,5,6,7,8,9
 //as observed from the log data, from the 10 possibles values of a digit, the digits : 0,1,2,3,6,7,8,9 appear
