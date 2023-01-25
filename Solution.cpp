@@ -78,16 +78,13 @@ for(int i = 0; i<Passcodes.size();++i){
 	//take the current permutation and test it using IsValid function within the Record of log ins
 	class vector<char> passcode = Passcodes[i];
 	if(IsValid(passcode,Record) == 1){
-	 cout << "The secret passcode for the bank account is : " << endl;
+	 cout << "The secret passcode for the bank account is : " << endl; //if you run it you obtain the answer ->73162890
 		for(int j = 0; j<passcode.size(); ++j){
 			cout << passcode[j] << "";
 		}
 		cout << endl;
 	}
 }
-
-//we neeed to define a function that for a given alphabet, returns a vector of all permutations 
-//BIGGER CASES : LENGTH of n>8 AND ANY 8-n CHARACTER(S) + THE 8 MANDATORY ONES
 return 0;
 }
 class vector<char> Cut(class vector<char> vect,int p){
