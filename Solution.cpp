@@ -156,3 +156,23 @@ int IsValid(class vector<char> candidate,class vector<class Log> Report ){
 	return valid;	
 }
 class vector<class vector<char>> Permutations(class vector<char> symbols){
+	class vector<class vector<char>> result;
+	//base case:
+	if(symbols.size() == 1){
+		return {symbols};
+	}else{
+		class vector<class vector<char>> result;
+		for(int i = 0; i<symbols.size(); ++i){
+			class vector<char> v(symbols.begin(),symbols.end());
+			v.erase(v.begin()+i);
+			class vector<class vector<char>> res = Permutations(v);
+			for(int j = 0; j<res.size();++j){
+				class vector<char> t = res[j];
+				t.insert(t.begin(),symbols[i]);
+				result.push_back(t);
+			}
+		}
+		return result;
+		
+	}
+}
